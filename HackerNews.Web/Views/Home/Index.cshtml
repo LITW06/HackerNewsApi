@@ -1,0 +1,12 @@
+﻿@model IEnumerable<HackerNews.Api.Story>
+
+<div class="well">
+    @foreach (var story in Model)
+    {
+        <h3>
+            <a target="_blank" href="@story.Url">@story.Title</a>
+            Current Score: @story.Score
+        </h3>
+        <hr/>
+    }
+</div>
